@@ -1,0 +1,8 @@
+{
+  "name": "d323-strider",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:derrickwilliams/strider-docker.git",
+  "author": "Derrick W <derrickawilliams@gmail.com>",
+  "license": "MIT"
+}

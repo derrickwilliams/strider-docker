@@ -26,3 +26,4 @@ services:
       NODE_ENV: production
       SERVER_NAME: 'http://strider.dev:8888'
       DEBUG: 'strider*'
+      HOME: '/home/strider'
