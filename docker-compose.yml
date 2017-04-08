@@ -3,10 +3,18 @@ version: '2'
 services:
   mongo:
     image: mongo
-    expose: 
+    expose:
       - 27017
+
+  ingress-router:
+    build: ./nginx
+    volumes:
+      - ${PWD}/nginx/conf/nginx.conf:/etc/nginx/nginx.conf
+    ports:
+      - 8888:80
+
   strider:
-    # image: mhdsyrwan/strider
+    # image: dev/strider
     build: .
     environment:
       VIRTUAL_HOST: 'strider.dev'
